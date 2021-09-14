@@ -1,0 +1,49 @@
+html, * {
+    box-sizing: border-box;
+    font-family: helvetica, Arial;
+  }
+  
+  body {
+    height: 100%;
+    font-size: 8vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+  }
+  
+ #result1, #result2, #result3 {
+   border: 2vmin solid white;
+   display: inline-grid;
+   /* grid-template-columns: 1fr 1fr 1fr; */
+   /* text-align:center;
+   position: relative; */
+
+ }
+ 
+ main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+ 
+  
+  button {
+    grid-column: span 3;
+    margin: 2vmin;
+    background-color: rgb(48, 118, 223);
+    color: black;
+    border: 1vmin solid black;
+    border-radius: 4vmin;
+    font-size: 4vmin;
+    outline: none;
+  }
+  
+  button:hover {
+    background-color: black;
+    color: rgb(119, 12, 12);
+  }
+  
+  
