@@ -13,9 +13,22 @@ html, * {
     background-color: rgb(170, 99, 33);
   }
   
- #result1, #result2, #result3 {
+ #choice1, #choice2, #choice3 {
    border: 2vmin solid white;
    display: inline-grid;
+   border-radius: 10px;
+   font-size: 4vmin;
+   outline: 5px;
+   height: 90px;
+   width: 180px;
+ }
+
+ img {
+  border-radius: 10px;
+  font-size: 4vmin;
+  outline: 5px;
+  height: 60px;
+  width: 150px; 
  }
  
  main {
@@ -46,11 +59,11 @@ html, * {
   margin: 2vmin;
   color: black;
   border: 2vmin solid black;
-  border-radius: px;
+  border-radius: 10px;
   font-size: 4vmin;
   outline: 5px;
   height: 60px;
-  width: 200px;
+  width: 150px;
   }
 
   #wOL {
