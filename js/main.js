@@ -18,6 +18,7 @@ let scores; //score
 
 
 // cached element references 
+
 const scoreEls = {
     win: document.querySelector('#scoreOfWin'),
     loss: document.querySelector('#scoreOfLoss'),
@@ -51,7 +52,7 @@ function init(){
         choice2: 'seven',
         choice3: 'seven',
     }
-    results = null;
+    Results = null;
 
     render()
 }
@@ -62,7 +63,7 @@ function render(){
     }
     for (let pic in choices){
       choiceEls[pic].imgEl.src = slot[choices[pic]].imgUrl
-}
+    }
 }
 
 function Spinning() {
@@ -72,10 +73,19 @@ function Spinning() {
     
     if(choices.choice1 === choices.choice2 && choices.choice1 === choices.choice3){
         results = 'win';
+        
+
     
     } else {
         results = 'loss';
     }
+
+    if(choices.choice1 === choices.choice2 && choices.choice1 === choices.choice3){
+        document.getElementById('winOrLoss').textContent = 'You Win 😃'
+    } else {
+        document.getElementById('winOrLoss').textContent = 'You Lose 🙁'
+    }
+
 
     //update score
     scores[results]++
