@@ -77,6 +77,17 @@ function Spinning() {
         results = 'loss';
     }
 
+    if(choices.choice1 === choices.choice2 && choices.choice1 === choices.choice3){
+        document.getElementById('winOrLoss').textContent = 'You Win 😃'
+    } else {
+        document.getElementById('winOrLoss').textContent = 'You Lose 🙁'
+    }
+
+    if(choices.choice1 === choices.choice2 && choices.choice1 === choices.choice3){
+    document.getElementById("winOrLoss").style.backgroundColor = "green";
+    } else {
+        document.getElementById("winOrLoss").style.backgroundColor = "red";
+    }
     //update score
     scores[results]++
     render()
