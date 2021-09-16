@@ -63,7 +63,8 @@ html, * {
   font-size: 4vmin;
   outline: 5px;
   height: 60px;
-  width: 150px;
+  width: 100px;
+  text-align: center;
   }
 
   #wOL {

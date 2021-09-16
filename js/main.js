@@ -16,9 +16,6 @@ let choices; // imgs
 let results; //who won
 let scores; //score
 
-// initialize the values of our state variables
-
-
 
 // cached element references 
 const scoreEls = {
@@ -38,9 +35,7 @@ const choiceEls = {
     }
 }
 
-document.querySelector('button').addEventListener('click',Spinning)
-// event listeners
-
+document.querySelector('button').addEventListener('click', Spinning)
 
 // functions
 
@@ -66,17 +61,42 @@ function render(){
      // or scoreEls[digits].textContent = 0;
     }
     for (let pic in choices){
-      choiceEls[pic].imgEl.src = slot.seven.imgUrl
-      // or choiceEls[pic].imgEl.src = slot[choices[pic]].imgUrl
+      choiceEls[pic].imgEl.src = slot[choices[pic]].imgUrl
+}
+}
+
+function Spinning() {
+    choices.choice1 = grabOne();
+    choices.choice2 = grabOne();
+    choices.choice3 = grabOne();
+    
+    if(choices.choice1 === choices.choice2 && choices.choice1 === choices.choice3){
+        results = 'win';
+    
+    } else {
+        results = 'loss';
     }
-}
 
-function Spinning(){
+    //update score
+    scores[results]++
+    render()
 }
-// resultEls[result].imgEl.src = rpsLookup
+// console.log(Spinning());
 
+
+function grabOne() {
+let random = Math.floor(Math.random()* 3);
+let grab = ['seven', 'cherry', 'lemon'];
+return grab[random];
+}
+grabOne();
+
+
+
+
+
+// event listeners
 // render
 // initialize 
 // initialize ()
 // render ();
-
