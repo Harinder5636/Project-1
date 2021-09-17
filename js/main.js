@@ -73,9 +73,6 @@ function Spinning() {
     
     if(choices.choice1 === choices.choice2 && choices.choice1 === choices.choice3){
         results = 'win';
-        
-
-    
     } else {
         results = 'loss';
     }
