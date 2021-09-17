@@ -2,7 +2,12 @@
 - This game is a digital version of the normal slot machine found in all casinos. It has a spin button which gives a player 3 random images. If all three images match then a player gets a win message. If the images do not match then the player gets a message stating they have lost. The score is recorded at the bottom of the page. 
 
 # Screenshot
-- ![SC](https://imgur.com/a/iuIjo2S)
+- <img src="https://i.ibb.co/kg5C7FS/Screen-Shot-2021-09-16-at-5-42-45-PM.png" ></a>
+
+
+
+
+
 
 # Technolgies
 - HTML
