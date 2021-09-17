@@ -2,7 +2,7 @@ html, * {
     box-sizing: border-box;
     font-family: 'Impact', Arial;
   }
-  
+
   body {
     height: 100%;
     font-size: 8vmin;
@@ -10,7 +10,11 @@ html, * {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(156, 149, 142);
+    background-color: rgb(116, 111, 107);
+  }
+  h1 {
+    margin-top: -20px;
+    margin-bottom: 50px;
   }
   
  #choice1, #choice2, #choice3 {
@@ -19,13 +23,14 @@ html, * {
    border-radius: 25px;
    font-size: 10vmin;
    outline: 5px;
-   height: 90px;
+   height: 130px;
    width: 180px;
+   margin-top: -50px;
  }
 
  img {
   border-radius: 10px;
-  height: 60px;
+  height: 100px;
   width: 150px; 
  }
  
@@ -38,14 +43,16 @@ html, * {
  
   
   button {
-    grid-column: span 3;
-    margin: 10px;
+    margin: 50Px;
     background-color: rgb(48, 118, 223);
     color: black;
     border: 1vmin solid black;
     border-radius: 4vmin;
     font-size: 4vmin;
     outline: none;
+    width: 200px;
+    height: 100px;
+    text-align: center;
   }
   
   button:hover {
@@ -69,7 +76,11 @@ html, * {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
   font-size: 50px;
+=======
+  margin: -50px;
+>>>>>>> main
   }
 
   #scoreOfWin {
@@ -79,5 +90,10 @@ html, * {
   #scoreOfLoss {
     background-color: red
   }
-  
+
+  h5 {
+    margin:0%
+  }
+}
+
   
