@@ -1,0 +1,2 @@
+# Big Money Slot Machine 
+This game is a digital version of the normal slot machine found in all casinos. It has a spin button which gives a player 3 random images. If all three images match then a player gets a win message. If the images do not match then the player gets a message stating they have lost. The score is recorded at the bottom of the page. 
